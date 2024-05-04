@@ -50,6 +50,35 @@ Text Versus Binary Format
 
 ## Data Storage Engines and Processing
 
+- Transactional processing
+  - ACID properties
+    - Atomicity
+    - Consistency
+    - Isolation
+    - Durability
+  - need to be processed fast (low latency)
+  - OLTP (Online Transaction Processing)
+
+- Analytical processing
+  - OLAP (Online Analytical Processing)
+  - need to process large amounts of data (high throughput)
+
+- ETL: Extract, Transform, and Load
+  - Extract: data is extracted from the source
+  - Transform: data is transformed into a format that is suitable for the target system
+  - Load: data is loaded into the target system
+
 ## Modes of Dataflow
 
+- through databases
+- throguh services (RESTful API)
+- through  real-time data processing systems  (Kafka, RabbitMQ)
+
 ## Batch Processing Versus Stream Processing
+
+- Batch processing
+  - process data in batches
+  - Hadoop, Spark
+- Stream processing
+  - process data in real-time
+  - Kafka, Flink
